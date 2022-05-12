@@ -1,6 +1,6 @@
-package com.qiuhongtao.dao;
+package com.chenziyang.dao;
 
-import com.qiuhongtao.model.User;
+import com.chenziyang.model.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

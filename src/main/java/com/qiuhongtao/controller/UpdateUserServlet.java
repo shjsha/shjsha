@@ -1,7 +1,7 @@
-package com.qiuhongtao.controller;
+package com.chenziyang.controller;
 
-import com.qiuhongtao.dao.UserDao;
-import com.qiuhongtao.model.User;
+import com.huangxinghao.dao.UserDao;
+import com.huangxinghao.model.User;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

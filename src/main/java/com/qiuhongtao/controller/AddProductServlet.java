@@ -1,8 +1,8 @@
 package com.chenziyang.controller;
 
-import com.huangxinghao.dao.ProductDao;
-import com.huangxinghao.model.Category;
-import com.huangxinghao.model.Product;
+import com.chenziyang.dao.ProductDao;
+import com.chenziyang.model.Category;
+import com.chenziyang.model.Product;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

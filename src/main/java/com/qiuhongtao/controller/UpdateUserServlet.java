@@ -1,7 +1,7 @@
 package com.chenziyang.controller;
 
-import com.huangxinghao.dao.UserDao;
-import com.huangxinghao.model.User;
+import com.chenziyang.dao.UserDao;
+import com.chenziyang.model.User;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

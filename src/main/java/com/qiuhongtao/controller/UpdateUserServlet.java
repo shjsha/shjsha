@@ -1,7 +1,7 @@
-package com.chenziyang.controller;
+package com.Chenziyang.controller;
 
-import com.chenziyang.dao.UserDao;
-import com.chenziyang.model.User;
+import com.Chenziyang.dao.UserDao;
+import com.Chenziyang.model.User;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -10,9 +10,6 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Date;
-import java.text.SimpleDateFormat;
-
-import static javafx.application.ConditionalFeature.WEB;
 
 @WebServlet(name = "UpdateUserServlet", value = "/updateUser")//url
 public class UpdateUserServlet extends HttpServlet {
@@ -24,7 +21,7 @@ public class UpdateUserServlet extends HttpServlet {
         //write code
         //TODO 1 : forward to WEB-INF/views/updateUser.jsp
         //TODO 2 : create one jsp page - update User
-        request.getRequestDispatcher("WEB-INF/views/updateUser.jsp").forward(request,response);
+        request.getRequestDispatcher("WEB-INF/views/updateUserView.jsp").forward(request,response);
 
     }
 
@@ -51,6 +48,9 @@ public class UpdateUserServlet extends HttpServlet {
         u.setEmail(email);
         u.setGender(gender);
         u.setBirthDate(birthDate);
+        HttpSession se=request.getSession();
+        se.setMaxInactiveInterval(10);
+        se.setAttribute("user",u);
         UserDao dao =new UserDao();
         try{
         dao.updateUser(con,u);
@@ -58,6 +58,6 @@ public class UpdateUserServlet extends HttpServlet {
             throwables.printStackTrace();
         }
 
-        request.getRequestDispatcher("WEB-INF/views/userInfo.jsp").forward(request,response);
+        request.getRequestDispatcher("accountDetails").forward(request,response);
     }
 }

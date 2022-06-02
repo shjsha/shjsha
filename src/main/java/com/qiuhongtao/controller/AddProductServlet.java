@@ -1,8 +1,8 @@
-package com.chenziyang.controller;
+package com.Chenziyang.controller;
 
-import com.chenziyang.dao.ProductDao;
-import com.chenziyang.model.Category;
-import com.chenziyang.model.Product;
+import com.Chenziyang.dao.ProductDao;
+import com.Chenziyang.model.Category;
+import com.Chenziyang.model.Product;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

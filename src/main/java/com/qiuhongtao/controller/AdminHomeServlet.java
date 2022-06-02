@@ -1,6 +1,6 @@
-package com.chenziyang.controller;
+package com.Chenziyang.controller;
 
-import com.chenziyang.model.User;
+import com.Chenziyang.model.User;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

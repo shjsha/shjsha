@@ -1,4 +1,4 @@
-package com.chenziyang.controller;
+package com.Chenziyang.controller;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
